@@ -1,0 +1,42 @@
+{
+  "name": "slidev-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "slidev starter template",
+  "author": {
+    "name": "Ray Guo",
+    "email": "ma2808203259@hotmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slidev",
+    "starter"
+  ],
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "postinstall": "husky || true"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@ergou_rrrr/eslint-config": "^1.0.12",
+    "@slidev/cli": "^0.48.2",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@types/node": "^20.12.4",
+    "eslint": "9.0.0-rc.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "vue": "^3.4.21"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html}": [
+      "pnpm lint:fix"
+    ]
+  }
+}
